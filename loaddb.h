@@ -17,5 +17,6 @@
  * function prototypes
  */
 int readfines(char *);
+void freefines();
 int readtickets(char *, int);
 #endif

@@ -34,7 +34,7 @@
 /*
  * global variable of program name for error message printing
  */
-char *argv0;                /* point to argv0 for error messages */
+char *argv0;                /* pointer to argv0 for error messages */
 struct vehicle **htable;    /* pointer to hash table */
 struct fine fineTab[CODES]; /* table of fines by code 0-99 */
 uint32_t tabsz = TABSZ;     /* hash table size */
@@ -137,10 +137,12 @@ main(int argc, char **argv)
      */
     if ((htable = calloc(tabsz, sizeof(struct vehicle *))) == NULL) {
         fprintf(stderr,"%s: calloc of ticket table failed\n", argv0);
+        freefines();
         return EXIT_FAILURE;
     }
 
     if (readtickets(ticknm, 0) != 0) {
+        freefines();
         freetickets();
         free(htable);
         return EXIT_FAILURE;
@@ -154,6 +156,7 @@ main(int argc, char **argv)
     /*
      * freeup allocated space for valgrind leaking memory checks
      */
+    freefines();
     freetickets();
     free(htable);
     return EXIT_SUCCESS;

@@ -114,6 +114,28 @@
 }
 
 /*
+ * function to free fine table memory
+ */
+void
+freefines(void)
+{
+    struct fine *fineptr = fineTab;
+    struct fine *endptr = fineTab + CODES;
+
+    if (fineptr == NULL)
+        return;
+    /*
+     * free each fine description is allocated
+     */
+    while (fineptr < endptr) {
+        if (fineptr->desc != NULL)
+            free(fineptr->desc);
+        fineptr++;
+    }
+    return;
+}
+
+/*
  * function for reading up the ticket table. 
  * the ticket fine table is a csv file with four fields per record
  * summons_id,plate,state,code
