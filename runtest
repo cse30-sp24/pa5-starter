@@ -1,0 +1,114 @@
+#!/bin/bash
+IN="in"
+OUT="out"
+EXPECT="exp"
+PROG="./parking"
+# you can change the argument to diff by altering the assignment below
+DIFF="diff -c"
+
+# make sure that PROG exists
+if [ ! -f $PROG ]; then
+    echo "Program to test: $PROG does not exist, exiting"
+    exit 1
+fi
+
+# check args
+
+if [ "$#" -lt "1" ]; then
+        echo "Usage: $0 test#"
+        exit 1;
+fi
+
+# run the test for each test number supplied as an argument
+for index in $@
+do
+    # if the command file does not exist, echo a warning then go to the next test
+    if [ ! -f $IN/cmd$index ]; then
+        echo "Test file $IN/cmd$index does not exist, skipping"
+        continue
+    fi 
+
+    # if the data file does not exist, echo a warning then go to the next test
+    if [ ! -f $IN/data$index ]; then
+        echo "Test file $IN/data$index does not exist, skipping"
+        continue
+    fi 
+
+    # if the expected file does not exist, echo a warning then go to the next test
+    if [ ! -f $EXPECT/out$index ]; then
+        echo "Test file $EXPECT/out$index does not exist, skipping"
+        #continue
+    fi 
+
+    # if the expected error file does not exist, echo a warning then go to the next test
+    if [ ! -f $EXPECT/err$index ]; then
+        echo "Test file $EXPECT/err$index does not exist, skipping"
+        #continue
+    fi 
+
+
+    echo
+    echo "----- Starting test number $index -----"
+
+    # remove any old output files
+    rm -f $OUT/out$index $OUT/err$index
+    echo "Running $IN/cmd$index < $IN/data$index > $OUT/out$index 2> $OUT/err$index"
+    echo -n "cmd$index is: "
+    tail -1 $IN/cmd$index
+
+    # run the test
+    $IN/cmd$index < $IN/data$index > $OUT/out$index 2> $OUT/err$index 
+
+    # show the return value from running the program
+    if [ $? -eq 0 ]; then
+        echo "$PROG returned EXIT_SUCCESS"
+    else
+        echo "$PROG returned EXIT_FAILURE"
+    fi
+    # compare the expected output with the actual output
+    # cmp -s has a return value of 0 if they are the same, otherwise they are different
+    echo "    Comparing $EXPECT/out$index to $OUT/out$index"
+    cmp -s $EXPECT/out$index $OUT/out$index
+    
+    # now check the return value of the cmp
+    if [ $? -ne 0 ]; then
+        echo
+        echo "**** Standard out   on test number $index failed ****"
+        echo
+
+        # check if the output exist, if not the command did not run
+        if [ -f $OUT/out$index ]; then
+            echo "differences are:"  
+            $DIFF $EXPECT/out$index $OUT/out$index
+        else
+            echo "Standard out file is missing or emtpy: $OUT/out$index"
+        fi
+    else
+        echo "**** Standard out   on test number $index passed ****"
+    fi
+
+    # compare the expected output with the actual output
+    # cmp -s has a return value of 0 if they are the same, otherwise they are different
+    echo "    Comparing $EXPECT/err$index to $OUT/err$index"
+    cmp -s $EXPECT/err$index $OUT/err$index
+
+    # now check the return value of the cmp
+    if [ $? -ne 0 ]; then
+        echo
+        echo "**** Standard error on test number $index failed ****"
+        echo
+
+        # check if the output exist, if not the command did not run
+        if [ -f $OUT/err$index ]; then
+            $DIFF $EXPECT/err$index $OUT/err$index
+        else
+            echo "Standard error file is missing or empty: $OUT/err$index"
+        fi
+    else
+        echo "**** Standard error on test number $index passed ****"
+    fi
+
+    echo "----- Ending   test number $index -----"
+done
+echo
+echo "******* All Done *******"
