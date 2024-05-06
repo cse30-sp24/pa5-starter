@@ -36,7 +36,7 @@
  */
 char *argv0;                /* point to argv0 for error messages */
 struct vehicle **htable;    /* pointer to hash table */
-struct fine fineTab[CODES]; /* table of fines by code 1-99 */
+struct fine fineTab[CODES]; /* table of fines by code 0-99 */
 uint32_t tabsz = TABSZ;     /* hash table size */
 int silent = 0;             /* silent mode for autograder */
 
