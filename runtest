@@ -37,13 +37,13 @@ do
     # if the expected file does not exist, echo a warning then go to the next test
     if [ ! -f $EXPECT/out$index ]; then
         echo "Test file $EXPECT/out$index does not exist, skipping"
-        #continue
+        continue
     fi 
 
     # if the expected error file does not exist, echo a warning then go to the next test
     if [ ! -f $EXPECT/err$index ]; then
         echo "Test file $EXPECT/err$index does not exist, skipping"
-        #continue
+        continue
     fi 
 
 
