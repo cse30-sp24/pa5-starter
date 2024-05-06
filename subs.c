@@ -22,8 +22,13 @@
  * input:
  *  summ:
  *      summons string (ascii numbers)
+ * Output variable:
+ *  summid:
+ *      summ converted to an unsigned long
  *
- * return: 0 is converted ok -1 otherwise
+ * return: 
+ *      0 if the conversion is ok
+ *      -1 otherwise
  */
 
 int
@@ -76,7 +81,7 @@ hash(char *str)
  * printvehicle
  *      prints the vehicle and all its tickets to stdout
  * args
- *  vhpt pointer to vehicle
+ *  vhpt: pointer to vehicle
  */
 unsigned int
 printvehicle(struct vehicle *vhpt)
@@ -119,9 +124,10 @@ printvehicle(struct vehicle *vhpt)
 
 /*
  * printsummons
- *      prints the vehicle one summons
+ *     prints a specific summons for a vehicle
  * args
- *  vhpt pointer to vehicle
+ *  vhpt: pointer to vehicle
+ *  summid: the summons to print
  */
 void
 printsummons(struct vehicle *vhpt, unsigned long summid)
