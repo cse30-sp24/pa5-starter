@@ -1,0 +1,15 @@
+Command: V
+
+Total vehicles in database: 163588
+Total tickets in database: 200000
+Longest hash chain in database index number: 171 Length: 467
+Shortest hash chain in database index number: 324 Length: 334
+Total of all unpaid fines in the database: $14600820
+Command: L
+
+Most tickets Plate: HYZ1399, State: NY tickets: 25, total fine: $2110
+Largest fine Plate: K035182, State: TX tickets: 24, total fine: $2360
+Command: Q
+
+Total vehicles freed: 163588
+Total tickets freed: 200000

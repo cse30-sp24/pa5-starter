@@ -1,0 +1,225 @@
+Command: V
+
+Total vehicles in database: 9
+Total tickets in database: 27
+Longest hash chain in database index number: 0 Length: 3
+Shortest hash chain in database index number: 0 Length: 3
+Total of all unpaid fines in the database: $2905
+Command: D
+
+Chain 0: 
+  Plate: HLC3177, State: NY, Tickets: 3, Total: $245
+     Ticket  1 Summons #:    106 Code#: 61 Fine: $ 65 WRONG WAY
+     Ticket  2 Summons #:    115 Code#: 62 Fine: $ 65 BEYOND MARKED SPACE
+     Ticket  3 Summons #:    124 Code#: 26 Fine: $115 NO STANDING-FOR HIRE VEH STND
+  Plate: GER9006, State: NY, Tickets: 3, Total: $275
+     Ticket  1 Summons #:    105 Code#: 17 Fine: $ 95 NO STANDING-EXC. AUTH. VEHICLE
+     Ticket  2 Summons #:    114 Code#: 47 Fine: $115 DOUBLE PARKING-MIDTOWN COMML
+     Ticket  3 Summons #:    123 Code#: 76 Fine: $ 65 VIN OBSCURED
+  Plate: GTR7949, State: NY, Tickets: 3, Total: $180
+     Ticket  1 Summons #:    102 Code#: 68 Fine: $ 65 NON-COMPLIANCE W/ POSTED SIGN
+     Ticket  2 Summons #:    111 Code#: 24 Fine: $ 65 NO PARKING-EXC. AUTH. VEHICLE
+     Ticket  3 Summons #:    120 Code#:  7 Fine: $ 50 FAILURE TO STOP AT RED LIGHT
+Chain 1: 
+  Plate: HDG7076, State: NY, Tickets: 3, Total: $345
+     Ticket  1 Summons #:    104 Code#: 67 Fine: $165 PEDESTRIAN RAMP
+     Ticket  2 Summons #:    113 Code#: 33 Fine: $ 65 FEEDING METER
+     Ticket  3 Summons #:    122 Code#:  5 Fine: $115 BUS LANE VIOLATION
+  Plate: HXM7362, State: NY, Tickets: 3, Total: $280
+     Ticket  1 Summons #:    101 Code#: 36 Fine: $ 50 PHTO SCHOOL ZN SPEED VIOLATION
+     Ticket  2 Summons #:    119 Code#:  9 Fine: $115 OBSTRUCTING TRAFFIC/INTERSECT
+     Ticket  3 Summons #:    110 Code#: 46 Fine: $115 DOUBLE PARKING
+  Plate: GLS6003, State: NY, Tickets: 3, Total: $745
+     Ticket  1 Summons #:    100 Code#: 53 Fine: $115 SAFETY ZONE
+     Ticket  2 Summons #:    109 Code#: 45 Fine: $115 TRAFFIC LANE
+     Ticket  3 Summons #:    118 Code#:  2 Fine: $515 NO OPERATOR NAM/ADD/PH DISPLAY
+Chain 2: 
+  Plate: HPC9135, State: NY, Tickets: 3, Total: $245
+     Ticket  1 Summons #:    108 Code#: 74 Fine: $ 65 FRONT OR BACK PLATE MISSING
+     Ticket  2 Summons #:    117 Code#: 55 Fine: $115 ELEVATED/DIVIDED HIGHWAY/TUNNL
+     Ticket  3 Summons #:    126 Code#: 32 Fine: $ 65 OT PARKING-MISSING/BROKEN METR
+  Plate: HZN6473, State: NY, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    107 Code#: 40 Fine: $115 FIRE HYDRANT
+     Ticket  2 Summons #:    125 Code#: 34 Fine: $ 65 EXPIRED METER
+     Ticket  3 Summons #:    116 Code#: 18 Fine: $115 NO STANDING-BUS LANE
+  Plate: HH1842, State: NC, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    103 Code#: 48 Fine: $115 BIKE LANE
+     Ticket  2 Summons #:    121 Code#: 52 Fine: $115 INTERSECTION
+     Ticket  3 Summons #:    112 Code#: 20 Fine: $ 65 NO PARKING-DAY/TIME LIMITS
+Total vehicles in database: 9
+Total tickets in database: 27
+Command: L
+
+Most tickets Plate: HH1842, State: NC tickets: 3, total fine: $295
+Largest fine Plate: GLS6003, State: NY tickets: 3, total fine: $745
+Command: P 106 HLC3177 NY
+
+Plate: HLC3177, State NY, Summons 106 paid
+Command: V
+
+Total vehicles in database: 9
+Total tickets in database: 26
+Longest hash chain in database index number: 0 Length: 3
+Shortest hash chain in database index number: 0 Length: 3
+Total of all unpaid fines in the database: $2840
+Command: D
+
+Chain 0: 
+  Plate: HLC3177, State: NY, Tickets: 2, Total: $180
+     Ticket  1 Summons #:    115 Code#: 62 Fine: $ 65 BEYOND MARKED SPACE
+     Ticket  2 Summons #:    124 Code#: 26 Fine: $115 NO STANDING-FOR HIRE VEH STND
+  Plate: GER9006, State: NY, Tickets: 3, Total: $275
+     Ticket  1 Summons #:    105 Code#: 17 Fine: $ 95 NO STANDING-EXC. AUTH. VEHICLE
+     Ticket  2 Summons #:    114 Code#: 47 Fine: $115 DOUBLE PARKING-MIDTOWN COMML
+     Ticket  3 Summons #:    123 Code#: 76 Fine: $ 65 VIN OBSCURED
+  Plate: GTR7949, State: NY, Tickets: 3, Total: $180
+     Ticket  1 Summons #:    102 Code#: 68 Fine: $ 65 NON-COMPLIANCE W/ POSTED SIGN
+     Ticket  2 Summons #:    111 Code#: 24 Fine: $ 65 NO PARKING-EXC. AUTH. VEHICLE
+     Ticket  3 Summons #:    120 Code#:  7 Fine: $ 50 FAILURE TO STOP AT RED LIGHT
+Chain 1: 
+  Plate: HDG7076, State: NY, Tickets: 3, Total: $345
+     Ticket  1 Summons #:    104 Code#: 67 Fine: $165 PEDESTRIAN RAMP
+     Ticket  2 Summons #:    113 Code#: 33 Fine: $ 65 FEEDING METER
+     Ticket  3 Summons #:    122 Code#:  5 Fine: $115 BUS LANE VIOLATION
+  Plate: HXM7362, State: NY, Tickets: 3, Total: $280
+     Ticket  1 Summons #:    101 Code#: 36 Fine: $ 50 PHTO SCHOOL ZN SPEED VIOLATION
+     Ticket  2 Summons #:    119 Code#:  9 Fine: $115 OBSTRUCTING TRAFFIC/INTERSECT
+     Ticket  3 Summons #:    110 Code#: 46 Fine: $115 DOUBLE PARKING
+  Plate: GLS6003, State: NY, Tickets: 3, Total: $745
+     Ticket  1 Summons #:    100 Code#: 53 Fine: $115 SAFETY ZONE
+     Ticket  2 Summons #:    109 Code#: 45 Fine: $115 TRAFFIC LANE
+     Ticket  3 Summons #:    118 Code#:  2 Fine: $515 NO OPERATOR NAM/ADD/PH DISPLAY
+Chain 2: 
+  Plate: HPC9135, State: NY, Tickets: 3, Total: $245
+     Ticket  1 Summons #:    108 Code#: 74 Fine: $ 65 FRONT OR BACK PLATE MISSING
+     Ticket  2 Summons #:    117 Code#: 55 Fine: $115 ELEVATED/DIVIDED HIGHWAY/TUNNL
+     Ticket  3 Summons #:    126 Code#: 32 Fine: $ 65 OT PARKING-MISSING/BROKEN METR
+  Plate: HZN6473, State: NY, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    107 Code#: 40 Fine: $115 FIRE HYDRANT
+     Ticket  2 Summons #:    125 Code#: 34 Fine: $ 65 EXPIRED METER
+     Ticket  3 Summons #:    116 Code#: 18 Fine: $115 NO STANDING-BUS LANE
+  Plate: HH1842, State: NC, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    103 Code#: 48 Fine: $115 BIKE LANE
+     Ticket  2 Summons #:    121 Code#: 52 Fine: $115 INTERSECTION
+     Ticket  3 Summons #:    112 Code#: 20 Fine: $ 65 NO PARKING-DAY/TIME LIMITS
+Total vehicles in database: 9
+Total tickets in database: 26
+Command: P 106 HLC3177 NY
+
+Plate: HLC3177, State NY, Summons 106 not found
+Command: P 123 GER9006 NY
+
+Plate: GER9006, State NY, Summons 123 paid
+Command: P 102 GTR7949 NY
+
+Plate: GTR7949, State NY, Summons 102 paid
+Command: P 114 GER9006 NY
+
+Plate: GER9006, State NY, Summons 114 paid
+Command: P 111 GTR7949 NY
+
+Plate: GTR7949, State NY, Summons 111 paid
+Command: P 117 HPC9135 NY
+
+Plate: HPC9135, State NY, Summons 117 paid
+Command: P 108 HPC9135 NY
+
+Plate: HPC9135, State NY, Summons 108 paid
+Command: P 126 HPC9135 NY
+
+Plate: HPC9135, State NY, Summons 126 paid
+Command: V
+
+Total vehicles in database: 8
+Total tickets in database: 19
+Longest hash chain in database index number: 0 Length: 3
+Shortest hash chain in database index number: 2 Length: 2
+Total of all unpaid fines in the database: $2285
+Command: D
+
+Chain 0: 
+  Plate: HLC3177, State: NY, Tickets: 2, Total: $180
+     Ticket  1 Summons #:    115 Code#: 62 Fine: $ 65 BEYOND MARKED SPACE
+     Ticket  2 Summons #:    124 Code#: 26 Fine: $115 NO STANDING-FOR HIRE VEH STND
+  Plate: GER9006, State: NY, Tickets: 1, Total: $95
+     Ticket  1 Summons #:    105 Code#: 17 Fine: $ 95 NO STANDING-EXC. AUTH. VEHICLE
+  Plate: GTR7949, State: NY, Tickets: 1, Total: $50
+     Ticket  1 Summons #:    120 Code#:  7 Fine: $ 50 FAILURE TO STOP AT RED LIGHT
+Chain 1: 
+  Plate: HDG7076, State: NY, Tickets: 3, Total: $345
+     Ticket  1 Summons #:    104 Code#: 67 Fine: $165 PEDESTRIAN RAMP
+     Ticket  2 Summons #:    113 Code#: 33 Fine: $ 65 FEEDING METER
+     Ticket  3 Summons #:    122 Code#:  5 Fine: $115 BUS LANE VIOLATION
+  Plate: HXM7362, State: NY, Tickets: 3, Total: $280
+     Ticket  1 Summons #:    101 Code#: 36 Fine: $ 50 PHTO SCHOOL ZN SPEED VIOLATION
+     Ticket  2 Summons #:    119 Code#:  9 Fine: $115 OBSTRUCTING TRAFFIC/INTERSECT
+     Ticket  3 Summons #:    110 Code#: 46 Fine: $115 DOUBLE PARKING
+  Plate: GLS6003, State: NY, Tickets: 3, Total: $745
+     Ticket  1 Summons #:    100 Code#: 53 Fine: $115 SAFETY ZONE
+     Ticket  2 Summons #:    109 Code#: 45 Fine: $115 TRAFFIC LANE
+     Ticket  3 Summons #:    118 Code#:  2 Fine: $515 NO OPERATOR NAM/ADD/PH DISPLAY
+Chain 2: 
+  Plate: HZN6473, State: NY, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    107 Code#: 40 Fine: $115 FIRE HYDRANT
+     Ticket  2 Summons #:    125 Code#: 34 Fine: $ 65 EXPIRED METER
+     Ticket  3 Summons #:    116 Code#: 18 Fine: $115 NO STANDING-BUS LANE
+  Plate: HH1842, State: NC, Tickets: 3, Total: $295
+     Ticket  1 Summons #:    103 Code#: 48 Fine: $115 BIKE LANE
+     Ticket  2 Summons #:    121 Code#: 52 Fine: $115 INTERSECTION
+     Ticket  3 Summons #:    112 Code#: 20 Fine: $ 65 NO PARKING-DAY/TIME LIMITS
+Total vehicles in database: 8
+Total tickets in database: 19
+Command: P 107 HZN6473 NY
+
+Plate: HZN6473, State NY, Summons 107 paid
+Command: P 125 HZN6473 NY
+
+Plate: HZN6473, State NY, Summons 125 paid
+Command: P 116 HZN6473 NY
+
+Plate: HZN6473, State NY, Summons 116 paid
+Command: P 112 HH1842 NC
+
+Plate: HH1842, State NC, Summons 112 paid
+Command: P 121 HH1842 NC
+
+Plate: HH1842, State NC, Summons 121 paid
+Command: P 103 HH1842 NC
+
+Plate: HH1842, State NC, Summons 103 paid
+Command: V
+
+Total vehicles in database: 6
+Total tickets in database: 13
+Longest hash chain in database index number: 0 Length: 3
+Shortest hash chain in database index number: 0 Length: 3
+Total of all unpaid fines in the database: $1695
+Command: D
+
+Chain 0: 
+  Plate: HLC3177, State: NY, Tickets: 2, Total: $180
+     Ticket  1 Summons #:    115 Code#: 62 Fine: $ 65 BEYOND MARKED SPACE
+     Ticket  2 Summons #:    124 Code#: 26 Fine: $115 NO STANDING-FOR HIRE VEH STND
+  Plate: GER9006, State: NY, Tickets: 1, Total: $95
+     Ticket  1 Summons #:    105 Code#: 17 Fine: $ 95 NO STANDING-EXC. AUTH. VEHICLE
+  Plate: GTR7949, State: NY, Tickets: 1, Total: $50
+     Ticket  1 Summons #:    120 Code#:  7 Fine: $ 50 FAILURE TO STOP AT RED LIGHT
+Chain 1: 
+  Plate: HDG7076, State: NY, Tickets: 3, Total: $345
+     Ticket  1 Summons #:    104 Code#: 67 Fine: $165 PEDESTRIAN RAMP
+     Ticket  2 Summons #:    113 Code#: 33 Fine: $ 65 FEEDING METER
+     Ticket  3 Summons #:    122 Code#:  5 Fine: $115 BUS LANE VIOLATION
+  Plate: HXM7362, State: NY, Tickets: 3, Total: $280
+     Ticket  1 Summons #:    101 Code#: 36 Fine: $ 50 PHTO SCHOOL ZN SPEED VIOLATION
+     Ticket  2 Summons #:    119 Code#:  9 Fine: $115 OBSTRUCTING TRAFFIC/INTERSECT
+     Ticket  3 Summons #:    110 Code#: 46 Fine: $115 DOUBLE PARKING
+  Plate: GLS6003, State: NY, Tickets: 3, Total: $745
+     Ticket  1 Summons #:    100 Code#: 53 Fine: $115 SAFETY ZONE
+     Ticket  2 Summons #:    109 Code#: 45 Fine: $115 TRAFFIC LANE
+     Ticket  3 Summons #:    118 Code#:  2 Fine: $515 NO OPERATOR NAM/ADD/PH DISPLAY
+Total vehicles in database: 6
+Total tickets in database: 13
+Command: Q
+
+Total vehicles freed: 6
+Total tickets freed: 13
