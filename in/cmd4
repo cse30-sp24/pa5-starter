@@ -1,0 +1,2 @@
+#!/bin/bash
+valgrind -q --leak-check=full --leak-resolution=med -s ./parking -s -d in/DB.csv 2>&1 1>/dev/null | cut -f2- -d' ' 1>&2 2>/dev/null 

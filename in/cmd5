@@ -1,0 +1,2 @@
+#!/bin/bash
+./parking -s -t 409 -d in/Large.csv
