@@ -19,11 +19,6 @@
  *      count the number of tickets and vehicles freed in
  *      the database 
  *      prints the counts before returning
- *
- *      unsigned long tcnt = 0UL; ticket cnt
- *      unsigned long vcnt = 0UL; vehicle cnt
- *      printf("Total tickets freed: %lu\n", tcnt);
- *      printf("Total vehicles freed: %lu\n", vcnt);
  */
 void
 freetickets(void)
