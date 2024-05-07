@@ -6,7 +6,7 @@ all: $(PROG)
 HEAD    = commands.h dumpdb.h insticket.h loaddb.h splitrow.h sumlookup.h \
 	      verifydb.h delticket.h freetickets.h largest.h parking.h subs.h vehlookup.h Version.h
 OBJ	    = commands.o dumpdb.o insticket.o loaddb.o sumlookup.o \
-	      delticket.o freetickets.o largest.o parking.o subs.o vehlookup.o
+	      delticket.o freetickets.o largest.o parking.o vehlookup.o
 		  
 # special libraries
 LIB	= libpa5.a
