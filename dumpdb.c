@@ -15,7 +15,7 @@
 #include "dumpdb.h"
 
 /*
- * dumpindex
+ * dumpchain
  *
  * dump the linked list chain on a single hash chain
  * print each vehicle on the chain using printvehicle()
