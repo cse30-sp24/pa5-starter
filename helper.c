@@ -76,6 +76,9 @@ hash(char *str)
  * args
  *  vhpt pointer to vehicle
  *
+ * Retuns
+ *  Count of tickets printed
+ *
  *  unsigned int printvehicle(struct vehicle *vhpt);
  */
 
