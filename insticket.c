@@ -64,9 +64,9 @@
 int
 insertticket(char *summ, char *plate, char *state, int code)
 {
-// for duplicate tickets 
+// for duplicate tickets do not add them and make sure you do not create a memory leak then
 //   fprintf(stderr,"%s: duplicate summons %lu\n", argv0, summid);
-//   and then return -1;
+//   finally return -1;
     return 0;
 }
 
