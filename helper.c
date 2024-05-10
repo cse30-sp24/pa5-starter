@@ -77,3 +77,34 @@ hash(char *str)
 
     return hash;
 }
+
+/*
+ * printvehicle
+ *      prints the vehicle and all its tickets to stdout
+ *
+ * arguments
+ * vhpt:
+ *       pointer to vehicle that you want to print
+ *       (data in vehicle struct and all it's tickets)
+ *
+ * returns
+ *     count of tickets printed
+ *
+ *     unsigned int printvehicle(struct vehicle *vhpt);
+ */
+
+ /*
+ * printsummons
+ *      prints the vehicle one summons
+ * arguments
+ * vhpt:
+ *       pointer to vehicle that you want to print
+ *       (data in vehicle struct and a specific ticket)
+ * summid:
+ *       specific summons you want printed
+ *
+ * returns
+ *     count of tickets printed
+ *
+ *    void printsummons(struct vehicle *vhpt, unsigned long summid);
+ */
