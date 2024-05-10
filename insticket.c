@@ -64,7 +64,9 @@
 int
 insertticket(char *summ, char *plate, char *state, int code)
 {
-
+// for duplicate tickets 
+//   fprintf(stderr,"%s: duplicate summons %lu\n", argv0, summid);
+//   and then return -1;
     return 0;
 }
 
