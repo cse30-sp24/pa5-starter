@@ -16,6 +16,7 @@
 /*
  * freetickets
  *      tears down the database freeing all allocated memory
+ *      by deleting all tickets and vehicles structs in the database
  *      count the number of tickets and vehicles freed in
  *      the database 
  *      prints the counts before returning
