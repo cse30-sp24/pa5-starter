@@ -19,8 +19,11 @@
  *          return -1;
  *      new_ticket->summons = summid;
  *
- * input:
- *  summ:summons string (ascii numbers)
+ * arguments:
+ *  summ:
+ *      summons string (ascii numbers)
+ *  summid:
+ *      output variable a pointer to unsigned long
  *
  * return: 0 is converted ok -1 otherwise
  */
@@ -30,8 +33,12 @@ strtosumid(char *summ, unsigned long *summid)
 {
     char *endptr;
 
-    if ((summ == NULL) || (summid == NULL)) {
-        fprintf(stderr, "%s: strtoDate() passed a NULL\n", argv0);
+    if (summ == NULL) {
+        fprintf(stderr, "%s: strtosumid() summ contains a NULL\n", argv0);
+        return -1;
+    }
+    if (summid == NULL) {
+        fprintf(stderr, "%s: strtosumid() summid contains a NULL\n", argv0);
         return -1;
     }
     errno = 0;
@@ -70,24 +77,3 @@ hash(char *str)
 
     return hash;
 }
-/*
- * printvehicle
- *      prints the vehicle and all its tickets to stdout
- * args
- *  vhpt pointer to vehicle
- *
- * Retuns
- *  Count of tickets printed
- *
- *  unsigned int printvehicle(struct vehicle *vhpt);
- */
-
-/*
- * printsummons
- *      prints the vehicle just one summons to stdout
- * args
- *  vhpt pointer to vehicle
- *  summid summons number
- *
- *  void printsummons(struct vehicle *vhpt, unsigned long summid);
- */
