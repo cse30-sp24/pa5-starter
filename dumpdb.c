@@ -58,8 +58,6 @@ dumpdb(void)
 {
     //unsigned long vcnt = 0UL; // total vehicle count
     //unsigned long tcnt = 0UL; // total ticket count
-
-    }
  
     // print the summaries
     //printf("Total vehicles in database: %lu\n", vcnt);
