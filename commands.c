@@ -233,8 +233,7 @@ chaincmd(char *buf)
         return;
     }
 
-    if ((vehicles = dumpchain(index, &tickets))
-            > 0)
+    if ((vehicles = dumpchain(index, &tickets)) > 0)
         printf("index: %u vehicles: %lu tickets: %lu\n", index, vehicles, tickets);
     else
         printf("Empty Database\n");
