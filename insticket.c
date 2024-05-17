@@ -41,7 +41,7 @@
  *      database. This saves space and is faster to compare than a string         
  *      Conversion function is supplied. use example:
  *           unsigned long summid;
- *           if (strtosumid(summ, &summid, argv) != 0)
+ *           if (strtosumid(summ, &summid) != 0)
  *                  error handling
  *           new_ticket->summons = summid;
  *  plate:
